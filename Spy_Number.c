@@ -1,16 +1,16 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,sum=0,product=1,d;
+    int n,d,sum=0,pro=1;
     scanf("%d",&n);
     while(n>0)
     {
         d=n%10;
         sum=sum+d;
-        product=product*d;
+        pro=pro*d;
         n=n/10;
     }
-    if(sum==product)
+    if(sum==pro)
     {
         printf("Spy Number");
     }
@@ -18,5 +18,4 @@ int main()
     {
         printf("Not Spy Number");
     }
-    return 0;
 }
