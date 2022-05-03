@@ -1,25 +1,25 @@
 #include<stdio.h>
 int main()
 {
-    int n,k,d,c=0,a[100]={0};
+    int n,i,d,c=0,a[100]={0};
     scanf("%d",&n);
     while(n>0)
     {
         d=n%10;
         c++;
-        a[k++]=d;
+        a[i++]=d;
         n=n/10;
     }
-    for(k=c-1;k>=0;k--)
+    for(i=c-1;i>=0;i--)
     {
-        if(a[k]==6)
+        if(a[i]==6)
         {
-            a[k]=9;
+            a[i]=9;
             break;
         }
     }
-    for(k=c-1;k>=0;k--)
+     for(i=c-1;i>=0;i--)
     {
-        printf("%d",a[k]);
+       printf("%d",a[i]);
     }
 }
