@@ -1,14 +1,14 @@
 #include<stdio.h>
 int main()
 {
-    int n,m,d,sum=0;
+    int n,k,sum=0,d;
     scanf("%d",&n);
-    m=n*n;
-    while(m>0)
+    k=n*n;
+    while(k>0)
     {
-        d=m%10;
+        d=k%10;
         sum=sum+d;
-        m=m/10;
+        k=k/10;
     }
     if(sum==n)
     {
